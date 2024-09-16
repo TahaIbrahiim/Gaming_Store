@@ -1,0 +1,533 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Gaming_Store.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Gaming_Store.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\3.png",
+      "PackagePath": "staticwebassets\\Images\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\BG.jpg",
+      "PackagePath": "staticwebassets\\Images\\BG.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\BG2.jpg",
+      "PackagePath": "staticwebassets\\Images\\BG2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\BG_index.jpg",
+      "PackagePath": "staticwebassets\\Images\\BG_index.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\Clients_index1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Clients_index1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\DetailsClient.jpg",
+      "PackagePath": "staticwebassets\\Images\\DetailsClient.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\DetailsGame.jpg",
+      "PackagePath": "staticwebassets\\Images\\DetailsGame.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\Edit.jpg",
+      "PackagePath": "staticwebassets\\Images\\Edit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\EditClient.jpg",
+      "PackagePath": "staticwebassets\\Images\\EditClient.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\about.jpg",
+      "PackagePath": "staticwebassets\\Images\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\add_game.jpg",
+      "PackagePath": "staticwebassets\\Images\\add_game.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\backk.jpg",
+      "PackagePath": "staticwebassets\\Images\\backk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\banner2.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\details.jpg",
+      "PackagePath": "staticwebassets\\Images\\details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\Images\\hero-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\img.png",
+      "PackagePath": "staticwebassets\\Images\\img.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\index.jpg",
+      "PackagePath": "staticwebassets\\Images\\index.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\loading.gif",
+      "PackagePath": "staticwebassets\\Images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\no_img.png",
+      "PackagePath": "staticwebassets\\Images\\no_img.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\our-image1.jpg",
+      "PackagePath": "staticwebassets\\Images\\our-image1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\our-image2.jpg",
+      "PackagePath": "staticwebassets\\Images\\our-image2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\our-image3.jpg",
+      "PackagePath": "staticwebassets\\Images\\our-image3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\search_icon.png",
+      "PackagePath": "staticwebassets\\Images\\search_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\soft.jpg",
+      "PackagePath": "staticwebassets\\Images\\soft.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\test1.png",
+      "PackagePath": "staticwebassets\\Images\\test1.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\test2.png",
+      "PackagePath": "staticwebassets\\Images\\test2.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\Images\\test3.png",
+      "PackagePath": "staticwebassets\\Images\\test3.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Clients\\AddClient.css",
+      "PackagePath": "staticwebassets\\css\\Clients\\AddClient.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Clients\\DetailsClient.css",
+      "PackagePath": "staticwebassets\\css\\Clients\\DetailsClient.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Clients\\EditClient.css",
+      "PackagePath": "staticwebassets\\css\\Clients\\EditClient.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Games\\AddGame.css",
+      "PackagePath": "staticwebassets\\css\\Games\\AddGame.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Games\\DetailsGame.css",
+      "PackagePath": "staticwebassets\\css\\Games\\DetailsGame.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Games\\EditGame.css",
+      "PackagePath": "staticwebassets\\css\\Games\\EditGame.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Games\\GamesHome.css",
+      "PackagePath": "staticwebassets\\css\\Games\\GamesHome.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\Index\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\Index\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\Index\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\css\\Index\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\meanmenu.css",
+      "PackagePath": "staticwebassets\\css\\Index\\meanmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\Index\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\Index\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\Index\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\Index\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\slick.css",
+      "PackagePath": "staticwebassets\\css\\Index\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Index\\style.css",
+      "PackagePath": "staticwebassets\\css\\Index\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\icon\\call.png",
+      "PackagePath": "staticwebassets\\icon\\call.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\icon\\email.png",
+      "PackagePath": "staticwebassets\\icon\\email.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\icon\\fb.png",
+      "PackagePath": "staticwebassets\\icon\\fb.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\icon\\instagram.png",
+      "PackagePath": "staticwebassets\\icon\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\icon\\lin(2).png",
+      "PackagePath": "staticwebassets\\icon\\lin(2).png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\icon\\loc.png",
+      "PackagePath": "staticwebassets\\icon\\loc.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\icon\\tw.png",
+      "PackagePath": "staticwebassets\\icon\\tw.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.0.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugin.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.svg",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap-icons\\font\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap-icons\\font\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Gaming_Store\\Gaming_Store\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Gaming_Store.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Gaming_Store.props",
+      "PackagePath": "build\\Gaming_Store.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Gaming_Store.props",
+      "PackagePath": "buildMultiTargeting\\Gaming_Store.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Gaming_Store.props",
+      "PackagePath": "buildTransitive\\Gaming_Store.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,151 @@
+﻿@model Client
+
+@{
+    ViewData["Title"] = "EditClient";
+}
+<head>
+     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Client</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRROE10m5r5u+lLk/NFFqeNm6PUtw7AJJWsHoCI5H" crossorigin="anonymous"></script>
+        <link href="~/css/Clients/EditClient.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+    <h1 style="color:white">@Model.Name Profile</h1>
+    <hr />
+    <div class="row" style="justify-content:center; color:white; margin:3vh;">
+        <div class="col-md-4" style="justify-content:center;">
+            <form asp-action="EditClient">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone" class="control-label"></label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Birthdate" class="control-label"></label>
+                    <input asp-for="Birthdate" class="form-control" />
+                    <span asp-validation-for="Birthdate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <select class="form-select" asp-for="Country">
+                        <option value="">Select a country</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Spain</option>
+                        <option>Australia</option>
+                        <option>Brazil</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                        <option>India</option>
+                        <option>South Korea</option>
+                        <option>Mexico</option>
+                        <option>Argentina</option>
+                        <option>South Africa</option>
+                        <option>Egypt</option>
+                        <option>Saudi Arabia</option>
+                        <option>United Arab Emirates</option>
+                        <option>Russia</option>
+                        <option>Turkey</option>
+                        <option>Sweden</option>
+                        <option>Netherlands</option>
+                        <option>Switzerland</option>
+                        <option>Belgium</option>
+                        <option>Norway</option>
+                        <option>Denmark</option>
+                        <option>Finland</option>
+                        <option>Austria</option>
+                        <option>Singapore</option>
+                        <option>New Zealand</option>
+                        <option>Malaysia</option>
+                        <option>Thailand</option>
+                        <option>Philippines</option>
+                        <option>Vietnam</option>
+                        <option>Chile</option>
+                        <option>Colombia</option>
+                        <option>Peru</option>
+                        <option>Ukraine</option>
+                        <option>Poland</option>
+                        <option>Hungary</option>
+                        <option>Czech Republic</option>
+                        <option>Portugal</option>
+                        <option>Israel</option>
+                        <option>Jordan</option>
+                        <option>Lebanon</option>
+                        <option>Pakistan</option>
+                        <option>Bangladesh</option>
+                        <option>India</option>
+                        <option>Iran</option>
+                        <option>Saudi Arabia</option>
+                        <option>Qatar</option>
+                        <option>Kuwait</option>
+                    </select>
+
+                </div>
+                 <!-- Image -->
+                <label style="padding-left:10px" asp-for="Image" class="control-label"></label>
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="Image" asp-for="Image" accept="image/*" />
+                    <label class="input-group-text" asp-for="Image">Upload</label>
+                </div>
+                <div class="form-group" style="padding-top:15px">
+                    <input type="submit" value="Save" class="btn btn-primary btn-outline-dark"  style="color:white"/>
+                     <a class="btn btn-secondary btn-outline-dark" style="color:white; margin-left:25vh" asp-action="GetClientById" asp-route-id="@Model?.Id">Back to List</a>
+                </div>
+            </form>
+            <!-- Image Preview -->
+            <div class="col-md-4 media-preview">
+                <div id="Image-Container" class="d-none">
+                    <img src="" alt="Image" class="img-thumbnail" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Image preview
+            $('#Image').on('change', function () {
+                var file = this.files[0];
+                if (file) {
+                    var imageUrl = URL.createObjectURL(file);
+                    var imageContainer = $('#Image-Container');
+                    imageContainer.removeClass('d-none');
+                    imageContainer.find('img').attr('src', imageUrl);
+                }
+            });
+        });
+    </script>
+
+</body>

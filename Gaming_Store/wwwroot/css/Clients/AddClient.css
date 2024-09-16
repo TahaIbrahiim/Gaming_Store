@@ -1,0 +1,19 @@
+﻿body {
+    background-image: url('/Images/Clients_index1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    display: flow;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+table {
+    background-color:gainsboro
+}

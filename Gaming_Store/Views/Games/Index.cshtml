@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Game>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+
+@{
+    ViewData["Title"] = "All Games";
+    var user = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/css/Games/GamesHome.css" rel="stylesheet">  
+</head>
+<body>
+
+    <div class="header-icon">
+        <i class="bi bi-controller"></i> Games
+    </div>
+
+    <div class="container">
+        <div style="padding-top:3%">
+             @if(user == "Admin"){
+                    <a class="btn btn-dark btn-outline-secondary" style="color:white" asp-action="AddGame">Add New Game</a>
+             }
+  
+           
+        </div>
+
+        <br />
+        <br />
+
+        <div class="row">
+            @foreach (var game in Model)
+            {
+                <div class="col-md-4 col-sm-6 mb-3">
+                         <div class="card" style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center; @if (game.Image != null) {
+                           <text>background-image: url('data:image/*;base64,@Convert.ToBase64String(game.Image)');</text>
+                        }">
+                        <div class="card-body" style="background-color: rgba(0, 0, 0, 0.5); height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                           <a href="@game.url" target="_blank" style="color:white">  <h5 class="card-title">@game.Name</h5> </a>
+                            <p class="card-text">@game.Version</p>
+                            @if (user == "Admin")
+                            {
+                                <a class="btn btn-info btn-outline-dark" style="color:white" asp-action="GetGameById" asp-controller="Games" asp-route-id="@game.Id">Details</a>
+                            }
+                            else
+                            {
+                                 <a class="btn btn-info btn-outline-dark" style="color:white" asp-action="GetGameById" asp-controller="Games" asp-route-id="@game.Id">Enroll Now</a>
+                            }
+                        </div> 
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

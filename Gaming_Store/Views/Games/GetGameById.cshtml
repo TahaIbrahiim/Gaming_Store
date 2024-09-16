@@ -1,0 +1,196 @@
+﻿@model GameDetailsVM
+
+@{
+    ViewData["Title"] = "GetGameById";
+    var user = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+}
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/Games/DetailsGame.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/Images/backk.jpg');
+            background-color: black;
+            color: white;
+        }
+
+        .card {
+            background-color: black;
+            color: white;
+        }
+
+        .card-header,
+        .card-footer {
+            background-color: black;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #007bff; 
+            border-color: #007bff;
+        }
+
+        .btn-danger {
+            background-color: #dc3545; 
+            border-color: #dc3545;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d; /* Customize the secondary button color if needed */
+            border-color: #6c757d;
+        }
+
+        .video-responsive {
+            border: 1px solid #ffffff; /* Optional: add border to video section */
+        }
+
+        .image-container {
+            border: 1px solid #ffffff; /* Optional: add border to image section */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 display-4">@Model.Game.Name</h1>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0" style="color:darkred">Game Details</h4>
+            </div>
+
+            @functions {
+                public string ConvertToBase64(byte[] data)
+                {
+                    if (data == null || data.Length == 0)
+                        return string.Empty;
+
+                    return $"data:video/mp4;base64,{Convert.ToBase64String(data)}";
+                }
+            }
+
+            <!-- Video Section -->
+            <div class="video-responsive mb-4">
+                @if (Model.Game.Video != null && Model.Game.Video.Length > 0)
+                {
+                    <video style="width: 100%; height: 100%;" controls>
+                        <source src="@ConvertToBase64(Model.Game.Video)" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                }
+                else
+                {
+                    <div class="video-placeholder" style="height: 500px; background-color: #f8f9fa;"></div>
+                }
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-4">
+                            <div class="col-sm-3 font-weight-bold text-nowrap">
+                                <span>Name</span>
+                            </div>
+                            <div class="col-sm-9" style="color:darkred">
+                                <p>@Model.Game.Name</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-3 font-weight-bold text-nowrap">
+                                <span>Description</span>
+                            </div>
+                            <div class="col-sm-9" style="color:darkred">
+                                <p>@Model.Game.Description</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-3 font-weight-bold text-nowrap">
+                                <span>Version</span>
+                            </div>
+                            <div class="col-sm-9" style="color:darkred">
+                                <p>@Model.Game.Version</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-3 font-weight-bold text-nowrap">
+                                <span>Mood Type</span>
+                            </div>
+                            <div class="col-sm-9" style="color:darkred">
+                                <p>@Model.Game.MoodType</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-3 font-weight-bold text-nowrap">
+                                <span>Category</span>
+                            </div>
+                            <div class="col-sm-9" style="color:darkred">
+                                <p>@Model.Game.Category</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-3 font-weight-bold text-nowrap">
+                                <span>Date</span>
+                            </div>
+                          <div class="col-sm-9" style="color:darkred">
+                                <p>@Model.Game.Date.ToString("MMMM d, yyyy")</p>
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-3 font-weight-bold text-nowrap">
+                                <span>Price</span>
+                            </div>
+                            <div class="col-sm-9" style="color:darkred">
+                                <p>Free Now</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Image Section -->
+                    <div class="col-md-6">
+                        @if (Model.Game.Image != null)
+                        {
+                            <div class="image-container" style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center; background-image: url('data:image/*;base64,@Convert.ToBase64String(Model.Game.Image)');"></div>
+                        }
+                        else
+                        {
+                            <div class="image-container" style="background-color: #f8f9fa;"></div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer text-right">
+                @if (Model.UserRole == "Admin")
+                {
+                    <a class="btn btn-primary" asp-action="EditGame" asp-route-id="@Model.Game.Id">Edit</a>
+                    <a class="btn btn-danger" asp-action="DeleteGame" asp-route-id="@Model.Game.Id">Delete</a>
+                }
+                else if (Model.UserRole == "Client")
+                {
+                    @if (Model.IsEnrolled)
+                    {
+                        <span class="btn btn-secondary">Already Enrolled</span>
+                    }
+                    else
+                    {
+                        <a class="btn btn-success" asp-action="Enroll" asp-route-id="@Model.Game.Id">Enroll Now</a>
+                    }
+                }
+                else
+                {
+                    <a class="btn btn-warning" asp-controller="Home" asp-action="Login">Login to Enroll</a>
+                }
+
+                <a class="btn btn-secondary" asp-action="Index">Back to List</a>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

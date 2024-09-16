@@ -1,0 +1,59 @@
+﻿body {
+    background-image: url('/Images/backk.jpg');
+    background-size: Cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: black;
+}
+
+
+.card-header {
+    background-color: black; 
+    font-size: 1.2rem; 
+}
+
+.card-footer {
+    background-color: black; 
+}
+
+.font-weight-bold {
+    font-weight: 600; 
+    font-size: 1.1rem; 
+}
+
+.text-nowrap {
+    white-space: nowrap; 
+}
+
+.btn {
+    margin: 5px; 
+    padding: 10px 20px; 
+    font-size: 1.1rem; 
+}
+
+.video-responsive {
+    width: 100%;
+    height: 500px;
+}
+
+.image-container {
+    width: 80%;
+    height: 300px; 
+    padding-top:5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-body .row {
+    margin-bottom: 15px; 
+}
+
+.col-sm-3 {
+    font-size: 1.1rem; 
+}
+
+.col-sm-9 {
+    font-size: 1.1rem;
+}

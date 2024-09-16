@@ -1,0 +1,400 @@
+﻿@model IEnumerable<Game>
+
+@{
+    var user = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>jackpiro</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="~/css/Index/style.css">
+    
+    <style>
+    
+.col-md-2 {
+    position: relative; 
+}
+
+
+.menu-area {
+    position: absolute; 
+    left: 0;
+    width: 100%; 
+   
+    background-color: black;
+}
+
+.main-menu {
+    font-size: 1.5em; 
+}
+
+.menu-area-main li {
+    padding: 10px 0;
+}
+
+.menu-area-main a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-area-main li.active a {
+    font-weight: bold; 
+}
+
+
+.menu-area-main a:hover {
+    color: #ddd; 
+}
+
+.game-gallery {
+    padding: 40px 0;
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    height: 600px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: darkred; 
+    border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1);
+}
+
+    </style>
+  
+</head>
+<!-- body -->
+
+<body class="main-layout" style="background-color:black; width:100%">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header-top">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div >
+                                        <h2 style="color:white;font:italic;font-size:50px;margin-left:50vh">@Model.Select(s=>s.Name).First()</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section" style="background-color:black">
+                <div class="banner_main">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 padding_left0">
+                                <div class="menu-area" >
+                                    <div class="limit-box" >
+                                        <nav class="main-menu" >
+                                            <ul class="menu-area-main" >
+                                                <li class="active"> <a href="#game">Game</a> </li>
+                                                <li > <a href="#about">Trailer</a> </li>
+                                                <li > <a href="#gallery">Gallery</a> </li>
+                                                <li > <a href="#contact">Contact</a> </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                                <div class="text-bg">
+                                        <h1 style="color:red"><br style=" color:red"> Trending Now !!</h1>
+                                         @if(user == "Admin"){
+                                        <li class="nav-item">
+                                            <a asp-controller="Games" asp-action="GetGameById" asp-route-Id="@Model.Select(s=>s.Id).First()"> See Details</a>
+                                        </li>
+                                          }
+                                          else{
+                                                  <a asp-controller="Games" asp-action="GetGameById" asp-route-Id="@Model.Select(s=>s.Id).First()">Enroll Now</a>
+                                          }
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="text-img">
+                                    <figure style="margin-right:5vh;margin-top:10vh; width:100vh; height:50vh">
+                                          <img style="width:100%;height:100%;display:flex;justify-content:center" src="data:image/*;base64,@(Convert.ToBase64String(Model.Select(i => i.Image).First()))" alt="None" />
+                                        </figure>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </header>
+
+   
+    <!-- about  -->
+    <div id="about" class="about" style="background-color:black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                            <h2 style="color:white">Trailer</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-box">
+                       <figure style="width: 100%; height: 500px; overflow: hidden;">
+                            <video style="width: 100%; height: 100%; object-fit: cover;" controls src="data:video/mp4;base64,@(Convert.ToBase64String(Model.Select(i => i.Video).First()))" alt="None"></video>
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end abouts -->
+        <!-- our -->
+        <div id="games" class="our" style="background-color:#181716;margin-top:20vh">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titlepage">
+                            <h2 style="color:white;">Other Games</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+
+                    <div class="col-md-12 margin_bottom" style="color:darkred">
+                    @foreach (var game in Model.Take(4))
+                    {
+                            <div class="row" style="margin-top:7vh">
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="color:darkred">
+                                    <div class="two-box" style="width:50vh;height:40vh">
+                                        <figure style="width:50vh;height:40vh">
+                                        @if (game.Image != null)
+                                        {
+                                              <a href="@game.url" target="_blank">  <img style="width:50vh;height:40vh" src="data:image/*;base64,@Convert.ToBase64String(game.Image)" alt="@game.Name" class="img-fluid" /> </a>
+                                        }
+                                        else
+                                        {
+                                                <img src="~/images/default-game-image.png" alt="@game.Name" class="img-fluid" />
+                                        }
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12" style="color:darkred">
+                                    <div class="Games">
+                                        <h3 style="color:White">@game.Name</h3>
+                                        <p style="color:darkred">@game.Description</p>
+                                         @if(HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "Admin"){
+                                        <li class="nav-item">
+                                                <a asp-controller="Games" asp-action="GetGameById" asp-route-Id="@game?.Id" style="background-color:white;color:red;">Details</a>
+                                        </li>
+                                          }
+                                          else{
+                                              <a asp-controller="Games" asp-action="GetGameById" asp-route-Id="@game?.Id" style="background-color:white;color:red;">Enroll Now</a>
+
+                                          }
+                                    </div>
+                                </div>
+
+                            </div>
+                    }
+                    </div>
+                </div>
+            </div>
+            <div style="justify-content:center;display:flex;margin-top:10vh;margin-bottom:2vh;">
+                    <a style="background-color:darkred;color:white" class="btn bi-arrow-down" asp-controller="Games" asp-action="Index"> Show More</a>
+            </div>
+
+        </div>
+
+ <!-- Game Gallery -->
+<div id="gallery" class="game-gallery" style="background-color:black; padding: 50px 0;">
+    <div class="container" style="padding-top:15vh">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="titlepage">
+                    <h2 style="color:white">Gallery</h2>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-inner">
+                @{
+                    int index = 0;
+                }
+                @foreach (var img in Model)
+                {
+                    <div class="carousel-item @(index == 0 ? "active" : "")">
+                            <a href="@img.url" target="_blank"> <img src="data:image/*;base64,@(Convert.ToBase64String(img.Image))" style="background-size:auto;" class="d-block w-100" alt="Game @(index + 1)"> </a>
+                    </div>
+                   
+                    index++;
+                    
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- end game gallery -->
+
+
+    <!-- contact -->
+        <div id="contact" class="contact" >
+            <div class="container"  >
+
+            <div class="row" >
+
+                <div class="col-md-12">
+
+                    <form class="contact_bg" >
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <input class="contactus" placeholder="Name" type="text" name="Name">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Phone" type="text" name="Email">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Email" type="text" name="Email">
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <button style="background-color:darkred;color:white" class="send">Contact Us</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end contact -->
+    <!--  footer -->
+    <footer style="width:100%">
+        <div class="footer" style="width:100%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Newsletter</h2>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <form class="news">
+                            <input class="newslatter" placeholder="Enter Your Email" type="text" name="Enter Your Email">
+                            <button style="margin-left:20px" class="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <ul class="social_link">
+                                            <li><a href="https://www.facebook.com/taha.ebrahim.1650/"><img src="icon/fb.png"></a></li>
+                                        <li><a href="#"><img src="icon/tw.png"></a></li>
+                                        <li><a href="https://www.linkedin.com/in/taha-ibrahim-678a70216/"><img src="icon/lin(2).png"></a></li>
+                                        <li><a href="#"><img src="icon/instagram.png"></a></li>
+                                    </ul>
+                                        <h2 style="color:white;font:italic;font-size:50px;margin-right:8vh;color:darkred">Taha Store</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="address">
+                                    <h3>Quick links</h3>
+                                    <ul class="Menu_footer">
+                                        <li class="active"> <img src="images/3.png" alt="#"> <a href="#game">Game</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#software">Software</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#about">About</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#testimonial"> Testimonial</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#contact">Contact</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <h3>Contact us </h3>
+                                    <ul class="loca">
+                                        <li>
+                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>Cairo, Egypt
+                                            
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="icon/email.png" alt="#" /></a>tahaebrahimtaha123@gmail.com
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+20 1021921562
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery-3.0.0.min.js"></script>
+    <script src="~/js/plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- sidebar -->
+    <script src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>

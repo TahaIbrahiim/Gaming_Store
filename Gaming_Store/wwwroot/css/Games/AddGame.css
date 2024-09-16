@@ -1,0 +1,31 @@
+﻿.media-preview {
+    margin-top: 20px;
+}
+
+body {
+    background-image: url('/Images/add_game.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    display: flow;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+label {
+    color: white;
+    font-size: 15px;
+}
+
+button {
+    width: 20vh;
+    height: 5vh;
+    font-size: x-large;
+}
+
+

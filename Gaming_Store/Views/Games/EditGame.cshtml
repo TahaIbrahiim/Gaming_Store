@@ -8,17 +8,53 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRROE10m5r5u+lLk/NFFqeNm6PUtw7AJJWsHoCI5H" crossorigin="anonymous"></script>
     <link href="~/css/Games/EditGame.css" rel="stylesheet" />
+    <style>
+        .media-preview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .media-preview img, .media-preview video {
+            max-width: 100%;
+            max-height: 400px; /* Adjust height as needed */
+            width: auto;
+            height: auto;
+        }
+
+        .preview-container {
+            width: 100%;
+            max-width: 800px; /* Adjust width as needed */
+            margin: 0 auto;
+        }
+
+        .form-container {
+            padding: 20px;
+     
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-top: 15px;
+        }
+
+        .btn-light {
+            margin-left: 15px;
+        }
+    </style>
 </head>
 
 <body>
+    <h1 style="color:white;">Edit Game</h1>
 
-<h1 style="color:white;">New Updates</h1>
-
-<hr />
-<div class="row" style="justify-content:center">
-        <div class="col-md-4" style="padding-top:20px; justify-content:center;">
+    <hr />
+    <div class="row" style="justify-content:center">
+        <div class="col-md-8 form-container">
             <form asp-action="EditGame" asp-controller="Games" method="post" enctype="multipart/form-data">
-            <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="Id" />
                 <div class="mb-3">
                     <label class="form-label" asp-for="Name">Name</label>
                     <input type="text" class="form-control" asp-for="Name" aria-describedby="Enter Game's Name">
@@ -47,7 +83,9 @@
                     <label class="form-label">Category</label>
                     <select class="form-select" asp-for="Category">
                         <option>Story</option>
+                        <option>Shooter</option>
                         <option>Competitive</option>
+                        <option>Football</option>
                         <option>Horror</option>
                         <option>RPG</option>
                     </select>
@@ -56,79 +94,72 @@
                     <label class="form-label" asp-for="url">Download Link</label>
                     <input type="url" class="form-control" asp-for="url" aria-describedby="Enter Download Link">
                 </div>
-            <div class="form-group" style="padding-top:15px">
-                <label asp-for="Date" class="control-label"></label>
-                <input asp-for="Date" class="form-control" />
-            </div>
-            <label class="form-label" style="padding-top:15px">Image</label>
-            <div class="input-group mb-3">
-                <input type="file" class="form-control" id="Image" asp-for="Image" accept="image/*" />
-                <label class="input-group-text" asp-for="Image">Upload</label>
-            </div>
-            <label class="form-label">Video</label>
-            <div class="input-group mb-3">
-                <input type="file" class="form-control" id="Video" asp-for="Video" accept="video/*" />
-                <label class="input-group-text" asp-for="Video">Upload</label>
-            </div>
-            <div class="form-group" style="padding-top:25px">
-                <input type="submit" value="Save" class="btn btn-primary" />
-                    <a class="btn btn-light" style="margin-left:280px" asp-action="GetGameById" asp-route-id="@Model?.Id">Back</a>
-            </div>
-        </form>
+                <div class="form-group">
+                    <label asp-for="Date" class="control-label">Date</label>
+                    <input asp-for="Date" type="date" class="form-control" />
+                </div>
 
-        <!-- Image Preview -->
-        <div class="col-md-4 media-preview">
-            <div id="Image-Container" class="d-none">
-                <img src="" alt="Image" class="img-thumbnail" />
-            </div>
-        </div>
+                <label class="form-label" style="padding-top:15px">Image</label>
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="Image" asp-for="Image" accept="image/*" />
+                    <label class="input-group-text" asp-for="Image">Upload</label>
+                </div>
+                <label class="form-label">Video</label>
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="Video" asp-for="Video" accept="video/*" />
+                    <label class="input-group-text" asp-for="Video">Upload</label>
+                </div>
+                <div class="form-group" style="padding-top:25px">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <a class="btn btn-light" asp-action="GetGameById" asp-route-id="@Model?.Id">Back</a>
+                </div>
+            </form>
 
-        <!-- Video Preview -->
-        <div class="col-md-4 media-preview">
-            <div id="Video-Container" class="d-none">
-                <video controls class="img-thumbnail">
-                    <source src="" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <!-- Image Preview -->
+            <div class="preview-container">
+                <div id="Image-Container" class="media-preview d-none">
+                    <img src="" alt="Image" class="img-thumbnail" />
+                </div>
+            </div>
+
+            <!-- Video Preview -->
+            <div class="preview-container">
+                <div id="Video-Container" class="media-preview d-none">
+                    <video controls class="img-thumbnail">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div>
-    
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            // Image preview
+            $('#Image').on('change', function () {
+                var file = this.files[0];
+                if (file) {
+                    var imageUrl = URL.createObjectURL(file);
+                    var imageContainer = $('#Image-Container');
+                    imageContainer.removeClass('d-none');
+                    imageContainer.find('img').attr('src', imageUrl);
+                }
+            });
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<script>
-    $(document).ready(function () {
-        // Image preview
-        $('#Image').on('change', function () {
-            var file = this.files[0];
-            if (file) {
-                var imageUrl = URL.createObjectURL(file);
-                var imageContainer = $('#Image-Container');
-                imageContainer.removeClass('d-none');
-                imageContainer.find('img').attr('src', imageUrl);
-            }
+            // Video preview
+            $('#Video').on('change', function () {
+                var file = this.files[0];
+                if (file) {
+                    var videoUrl = URL.createObjectURL(file);
+                    var videoContainer = $('#Video-Container');
+                    videoContainer.removeClass('d-none');
+                    videoContainer.find('source').attr('src', videoUrl);
+                    videoContainer.find('video')[0].load(); // Reload the video element to update the source
+                }
+            });
         });
-
-        // Video preview
-        $('#Video').on('change', function () {
-            var file = this.files[0];
-            if (file) {
-                var videoUrl = URL.createObjectURL(file);
-                var videoContainer = $('#Video-Container');
-                videoContainer.removeClass('d-none');
-                videoContainer.find('video source').attr('src', videoUrl);
-                videoContainer.find('video')[0].load(); // Reload the video element to update the source
-            }
-        });
-    });
-</script>
-
+    </script>
 </body>

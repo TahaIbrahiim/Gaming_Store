@@ -94,7 +94,7 @@ namespace Gaming_Store.Controllers
 
             _context.Clients.Add(client);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction("Login");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

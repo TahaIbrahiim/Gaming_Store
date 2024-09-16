@@ -52,7 +52,7 @@
                 <label style="padding-right:30px" asp-for="Country">Choose your Country</label>
             </div>
             <div class="input-field">
-                <input type="date" asp-for="Birthdate" required>
+                <input type="date" asp-for="Birthdate" value="@DateTime.Now">
                 <label asp-for="Birthdate">Choose your Birthdate</label>
             </div>
             <div class="input-field">

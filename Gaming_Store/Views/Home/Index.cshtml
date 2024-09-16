@@ -33,8 +33,6 @@
     position: absolute; 
     left: 0;
     width: 100%; 
-   
-    background-color: black;
 }
 
 .main-menu {
@@ -79,12 +77,29 @@
     filter: invert(1);
 }
 
+
+.slider_section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+#top-section {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+
     </style>
   
 </head>
 <!-- body -->
 
-<body class="main-layout" style="background-color:black; width:100%">
+<body class="main-layout" width:100%">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -96,22 +111,17 @@
         <div class="header-top">
             <div class="header">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                            <div class="full">
-                                <div class="center-desk">
-                                    <div >
-                                        <h2 style="color:white;font:italic;font-size:50px;margin-left:50vh">@Model.Select(s=>s.Name).First()</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <!-- end header inner -->
             <!-- end header -->
-            <section class="slider_section" style="background-color:black">
+           @{
+                var imageBase64 = Convert.ToBase64String(Model.Select(i => i.Image).First());
+                var imageDataUrl = $"data:image/*;base64,{imageBase64}";
+            }
+
+           <section id="top-section" style="background-image: url('@imageDataUrl');">
                 <div class="banner_main">
 
                     <div class="container-fluid">
@@ -131,24 +141,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
-                                <div class="text-bg">
-                                        <h1 style="color:red"><br style=" color:red"> Trending Now !!</h1>
+                         
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                
+
+                                 <div class="text-bg">
+                                        <h1 style="color:darkred"><br style=" color:darkred"> Trending Now !!</h1>
                                          @if(user == "Admin"){
                                         <li class="nav-item">
                                             <a asp-controller="Games" asp-action="GetGameById" asp-route-Id="@Model.Select(s=>s.Id).First()"> See Details</a>
                                         </li>
                                           }
                                           else{
-                                                  <a asp-controller="Games" asp-action="GetGameById" asp-route-Id="@Model.Select(s=>s.Id).First()">Enroll Now</a>
+                                             <a asp-controller="Games" asp-action="GetGameById" asp-route-Id="@Model.Select(s=>s.Id).First()">Enroll Now</a>
                                           }
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
-                                <div class="text-img">
-                                    <figure style="margin-right:5vh;margin-top:10vh; width:100vh; height:50vh">
-                                          <img style="width:100%;height:100%;display:flex;justify-content:center" src="data:image/*;base64,@(Convert.ToBase64String(Model.Select(i => i.Image).First()))" alt="None" />
-                                        </figure>
                                 </div>
                             </div>
 
@@ -207,10 +213,10 @@
 
                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="color:darkred">
                                     <div class="two-box" style="width:50vh;height:40vh">
-                                        <figure style="width:50vh;height:40vh">
+                                        <figure style="width:40vh;height:30vh">
                                         @if (game.Image != null)
                                         {
-                                              <a href="@game.url" target="_blank">  <img style="width:50vh;height:40vh" src="data:image/*;base64,@Convert.ToBase64String(game.Image)" alt="@game.Name" class="img-fluid" /> </a>
+                                              <a href="@game.url" target="_blank">  <img style="width:40vh;height:30vh" src="data:image/*;base64,@Convert.ToBase64String(game.Image)" alt="@game.Name" class="img-fluid" /> </a>
                                         }
                                         else
                                         {

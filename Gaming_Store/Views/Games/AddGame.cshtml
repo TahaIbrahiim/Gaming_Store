@@ -1,9 +1,5 @@
 ﻿@model Game
 
-@{
-    ViewData["Title"] = "Add Game";
-}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +9,31 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRROE10m5r5u+lLk/NFFqeNm6PUtw7AJJWsHoCI5H" crossorigin="anonymous"></script>
     <link href="~/css/Games/AddGame.css" rel="stylesheet" />
-    
+    <style>
+        .media-preview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .media-preview img, .media-preview video {
+            max-width: 100%;
+            max-height: 400px; /* Adjust height as needed */
+            width: auto;
+            height: auto;
+        }
+        .preview-container {
+            width: 100%;
+            max-width: 600px; /* Adjust width as needed */
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
     <h1 style="color:white">Add New Game</h1>
     <div class="row" style="justify-content:center">
-
-        <div class="col-md-4" style="padding-top:20px; justify-content:center;">
+        <div class="col-md-8" style="padding-top:20px;">
             <form method="post" asp-action="AddGame" asp-controller="Games" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label class="form-label" asp-for="Name">Name</label>
@@ -46,7 +59,7 @@
                         <option>Offline</option>
                     </select>
                 </div>
-                <div>
+                <div class="mb-3">
                     <label class="form-label">Category</label>
                     <select class="form-select" asp-for="Category">
                         <option>Story</option>
@@ -71,24 +84,23 @@
                     <label class="input-group-text" asp-for="Video">Upload</label>
                 </div>
                 <br />
-                <div class="form-group" >
+                <div class="form-group">
                     <input type="submit" value="Save" class="btn btn-primary" />
-                    <a class="btn btn-light" style="margin-left:280px" asp-action="Index">Back</a>
+                    <a class="btn btn-light" style="margin-left:100vh" asp-action="Index">Back</a>
                 </div>
-               
             </form>
 
             <!-- Image Preview -->
-            <div class="col-md-4 media-preview">
-                <div id="Image-Container" class="d-none">
-                    <img src="" alt="Image" class="img-thumbnail" />
+            <div class="preview-container">
+                <div id="Image-Container" class="media-preview d-none">
+                    <img src="" alt="Image" />
                 </div>
             </div>
 
             <!-- Video Preview -->
-            <div class="col-md-4 media-preview">
-                <div id="Video-Container" class="d-none">
-                    <video controls class="img-thumbnail">
+            <div class="preview-container">
+                <div id="Video-Container" class="media-preview d-none">
+                    <video controls>
                         <source src="" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -119,12 +131,11 @@
                     var videoUrl = URL.createObjectURL(file);
                     var videoContainer = $('#Video-Container');
                     videoContainer.removeClass('d-none');
-                    videoContainer.find('video source').attr('src', videoUrl);
+                    videoContainer.find('source').attr('src', videoUrl);
                     videoContainer.find('video')[0].load(); // Reload the video element to update the source
                 }
             });
         });
     </script>
-
 </body>
 </html>
